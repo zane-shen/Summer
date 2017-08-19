@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>questionnaire</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./assets/css/animate.css"/>
+  </head>
+  <body class="container-fluid">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="row header">
+        <div class="col-sm-1 col-sm-offset-1 logo">
+          <a href="./home.html"><img src="./assets/picture/Main_Logo.png" width="150px"></a>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 nav">
+          <p class="navP"><span class="cicle cicle_active">1</span><a class="h6" href="#">Risk Profile</a></p>
+        </div>
+        <div class="col-sm-2 nav">
+          <p class="navP"><span class="cicle">2</span><a class="h6" href="./choosingPlan.html">Customization</a></p>
+        </div>
+        <div class="col-sm-2 nav">
+          <p class="navP"><span class="cicle">3</span><a class="h6" href="#">Open Accout</a></p>
+        </div>
+        <div class="col-sm-2 logo">
+          <p class="h6">Already own an account?</p>
+        </div>
+         <div class="col-sm-1 logo" style="padding:0">
+          <a href="./login.html" class="h6 invest">Login in</a>
+        </div>
+    </header>
+    <div class="row" style="margin: 0 -15px;">
+      <div class="questionBreadBroad col-sm-12">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div id="question1" class="questionContain questionActive" style="display: block;">
+      <div class="row questionairBox">
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4>The following answering options are description of 5 sample porfolios and their potential portfolio gain and loss outcomes over a short time horizon(i.1 year). Which of sample portfolio would be most attractive to you?</h4>
+          <h6><strong>Note:</strong>&nbsp; Investments carraying a higher risk come with the potential of achieving more gains, but also a higher possibility of incurring considerable losses.</h6><br><br>
+          <img src="./assets/picture/questionnarieImg1.png" /><br>
+          <p class="text-left"><input type="radio" name="question1" value="A"> Portfolio(A)- I am willing to accept a potential loss of up to 2% for up to 5% upside.</p>
+          <p class="text-left"><input type="radio" name="question1" value="B"> Portfolio(B)- I am willing to accept a potential loss of up to 5% for up to 10% upside.</p>
+          <p class="text-left"><input type="radio" name="question1" value="C"> Portfolio(C)- I am willing to accept a potential loss of up to 9% for up to 16% upside.</p>
+          <p class="text-left"><input type="radio" name="question1" value="D"> Portfolio(D)- I am willing to accept a potential loss of up to 15% for up to 23% upside.</p>
+          <p class="text-left"><input type="radio" name="question1" value="E"> Portfolio(E)- I am willing to accept a potential loss of up to 22% for up to 32% upside.</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+           <input type="button" class="btn btn-success" onclick="questionContinue(1)" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <div id="question2" class="questionContain">
+      <div class="row questionairBox" >
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4 style="margin-left: -140px;">What will you do when you face a value drop of you investments?</h4>
+          <br/>
+          <p class="text-left"><input type="radio" name="question2" value="A">&nbsp;A. I will sell all my investments immediately even if the drop is small.</p>
+          <p class="text-left"><input type="radio" name="question2" value="B">&nbsp;B. I will sell all my investments to stop loss when the drop is large.</p>
+          <p class="text-left"><input type="radio" name="question2" value="C">&nbsp;C. I will sell a portion of my investments when the drop is large, and will remain some investments to wait for recovery.</p>
+          <p class="text-left"><input type="radio" name="question2" value="D">&nbsp;D. I will not sell any of my investment,expecting performance to improve.</p>
+          <p class="text-left"><input type="radio" name="question2" value="E">&nbsp;E. I will not sell my investments, regardless how large the drop is, and will buy more because the prise is cheaper than before.</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+          <input type="button" class="btn btn-primary" onclick="questionBack(2)" value="Back" />
+          <input type="button" class="btn btn-success" onclick="questionContinue(2);" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <div id="question3" class="questionContain">
+      <div class="row questionairBox">
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4 style="margin-left: -290px;">How do you know about investment matters?</h4>
+          <br/>
+          <p class="text-left"><input type="radio" name="question3" value="A">&nbsp;A. Very limited(little knowledge).</p>
+          <p class="text-left"><input type="radio" name="question3" value="B">&nbsp;B. Basic knowledge(understand the differences between stocks, bonds).</p>
+          <p class="text-left"><input type="radio" name="question3" value="C">&nbsp;C. Fair amount of knowledge(aware of different investment options and their risks).</p>
+          <p class="text-left"><input type="radio" name="question3" value="D">&nbsp;D. Considerable knowledge(understand different investment philosophies).</p>
+          <p class="text-left"><input type="radio" name="question3" value="E">&nbsp;E. Extensive knowledge(completely understand investment products and strategies).</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+          <input type="button" class="btn btn-primary" onclick="questionBack(3)" value="Back" />
+          <input type="button" class="btn btn-success" onclick="questionContinue(3);" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <div id="question4" class="questionContain">
+      <div class="row questionairBox">
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4>Which of the following statements most accurately describes your financial situation today?</h4>
+          <h6>(<strong>Note</strong>: normal expenses excloude large one-time expense such as car purchase or home renovation)</h6>
+
+          <p class="text-left"><input type="radio" name="question4" value="A">&nbsp;A. My income is lower than my normal expense.</p>
+          <p class="text-left"><input type="radio" name="question4" value="B">&nbsp;B. My income is the same as my normal expense.</p>
+          <p class="text-left"><input type="radio" name="question4" value="C">&nbsp;C. My income is higher than my normal expense by ≤ 30%.</p>
+          <p class="text-left"><input type="radio" name="question4" value="D">&nbsp;D. My income is considerable higher, 30%~100% than my normal expense.</p>
+          <p class="text-left"><input type="radio" name="question4" value="E">&nbsp;E. My income is significantly higher, >100% than my normal expense.</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+          <input type="button" class="btn btn-primary" onclick="questionBack(4)" value="Back" />
+          <input type="button" class="btn btn-success" onclick="questionContinue(4);" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <div id="question5" class="questionContain">
+      <div class="row questionairBox">
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4 style="margin-left: -100px;">Which statement most closely reflects your current finacial situation?</h4>
+          <br/>
+          <p class="text-left"><input type="radio" name="question5" value="A">&nbsp;A. I have a lot of long-term obligations.</p>
+          <p class="text-left"><input type="radio" name="question5" value="B">&nbsp;B. I have a mortgage and some short-term obligations.</p>
+          <p class="text-left"><input type="radio" name="question5" value="C">&nbsp;C. I have a mortgate but no other debts that concern me.</p>
+          <p class="text-left"><input type="radio" name="question5" value="D">&nbsp;D. I have no mortgate but have a few other obligations like credit card payments.</p>
+          <p class="text-left"><input type="radio" name="question5" value="E">&nbsp;E. I am completely debt free.</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+          <input type="button" class="btn btn-primary" onclick="questionBack(5)" value="Back" />
+          <input type="button" class="btn btn-success" onclick="questionContinue(5);" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <div id="question6" class="questionContain">
+      <div class="row questionairBox">
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4>Do you have an emergency fund to provide for unexpected expenses, to avoid needing to draw on medium to long-term saving to meet immediate needs?</h4>
+          <h6>  (<strong>Note</strong>:You should allow the equivalent of at least three months net income for emergencies.)</h6>
+
+         <p class="text-left"><input type="radio" name="question6" value="A">&nbsp;A. No</p>
+          <p class="text-left"><input type="radio" name="question6" value="B">&nbsp;B. Yes - but less than three months' salary.</p>
+          <p class="text-left"><input type="radio" name="question6" value="C">&nbsp;C. Less than six months' salary.</p>
+          <p class="text-left"><input type="radio" name="question6" value="D">&nbsp;D. Around one year's salary.</p>
+          <p class="text-left"><input type="radio" name="question6" value="E">&nbsp;E. More than two years' salary.</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+          <input type="button" class="btn btn-primary" onclick="questionBack(6)" value="Back" />
+          <input type="button" class="btn btn-success" onclick="questionContinue(6);" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <div id="question7" class="questionContain">
+      <div class="row questionairBox">
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4 style="margin-left: -30px;">On the whole, which of the following best describes your investmetn objective?</h4>
+          <br/>
+          <p class="text-left"><input type="radio" name="question7" value="A">&nbsp;A. Capital preservation.</p>
+          <p class="text-left"><input type="radio" name="question7" value="B">&nbsp;B. A regular stream of stable income.</p>
+          <p class="text-left"><input type="radio" name="question7" value="C">&nbsp;C. A combination of income and capital growth.</p>
+          <p class="text-left"><input type="radio" name="question7" value="D">&nbsp;D. Achieve substantial long term capital growth.</p>
+          <p class="text-left"><input type="radio" name="question7" value="E">&nbsp;E. High capital appreciation.</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+          <input type="button" class="btn btn-primary" onclick="questionBack(7)" value="Back" />
+          <input type="button" class="btn btn-success" onclick="questionContinue(7);" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <div id="question8" class="questionContain">
+      <div class="row questionairBox">
+        <div class="col-sm-10 text-center col-sm-offset-1">
+          <h4 style="margin-left: -50px;">When will you need to access all or a large portion of this investment portfolio?</h4>
+          <br>
+          <p class="text-left"><input type="radio" name="question8" value="A">&nbsp;A. In 2 years or less.</p>
+          <p class="text-left"><input type="radio" name="question8" value="B">&nbsp;B. Within 3-5 years.</p>
+          <p class="text-left"><input type="radio" name="question8" value="C">&nbsp;C. Within 6-10 years.</p>
+          <p class="text-left"><input type="radio" name="question8" value="D">&nbsp;D. Within 10-20 years.</p>
+          <p class="text-left"><input type="radio" name="question8" value="E">&nbsp;E. Not for 20+ years.</p>
+        </div>
+      </div>
+      <div class="row questionairBox">
+        <div class="col-sm-8 col-sm-offset-1 text-right">
+          <input type="button" class="btn btn-primary" onclick="questionBack(8)" value="Back" />
+          <input type="button" class="btn btn-success" onclick="questionContinue(8);" value="Continue" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-1">
+            <p class="h5 aTitle">Offering</p>
+            <p class="h6"><a href="#">how it works</a></p>
+            <p class="h6"><a href="#">Pricing</a></p>
+            <p class="h6"><a href="#">Platform agreement</a></p>
+            <p class="h6"><a href="#">Privacy</a></p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h5 aTitle">Features</p>
+            <p class="h6"><a href="#">Goal-Oriented</a></p>
+            <p class="h6"><a href="#">Global</a></p>
+            <p class="h6"><a href="#">Diversification</a></p>
+            <p class="h6"><a href="#">Methodology</a></p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h5 aTitle">Company</p>
+            <p class="h6"><a href="#">About us</a></p>
+            <p class="h6"><a href="#">Contact us</a></p>
+          </div>
+          <div class="col-sm-1">
+            <p class="h5 aTitle">Resource</p>
+            <p class="h6"><a href="#">Insight</a></p>
+            <p class="h6"><a href="#">News</a></p>
+          </div>
+          <div class="col-sm-1">
+            <p class="h5 aTitle">FAQ</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="h5 aTitle">Join us on</p>
+            <p class="h6"><a href="#">Facebook</a></p>
+            <p class="h6"><a href="#">Twitter</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1" style="height: 1px; background:#bdbdbd;"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-1">
+            <p class="h6">©&nbsp;2017&nbsp;WealthEdge&nbsp;Asset&nbsp;Management&nbsp;Pte&nbsp;Ltd</p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h6 text-right">support@wealthedge.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script type="text/javascript" src="./assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/js/main.js"></script>

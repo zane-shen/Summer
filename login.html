@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.css"/>
+    <link type="text/css" href="./assets/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+  </head>
+  <body class="container-fluid">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="row header">
+        <div class="col-sm-1 col-sm-offset-1 logo">
+          <a href="./home.html"><img src="./assets/picture/Main_Logo.png" width="100px"></a>
+        </div>
+        <div class="col-sm-1 col-sm-offset-1 nav text-center">
+          <a class="h6" href="./methodology.html">Methodology</a>
+        </div>
+        <div class="col-sm-1 nav text-center">
+          <a class="h6" href="./faq.html">FAQ</a>
+        </div>
+        <div class="col-sm-1 nav text-center">
+          <a class="h6" href="./blog.html">Blog</a>
+        </div>
+        <div class="col-sm-1 col-sm-offset-3 logo" style="padding:0">
+          <a href="./login.html"style="color: #337ab7;" class="h6 login">Login in</a>
+        </div>
+        <div class="col-sm-1" id="invest" style="padding:0">
+          <a href="./questionnaire.html" class="h6 invest">Invest now</a>
+        </div>
+    </header>
+    <div class="row">
+    	<div class="col-sm-10 col-sm-offset-1">
+    		 <p class="h2">My Account</p>
+    	</div>
+    </div>
+    <div class="row" >
+    	<div class="col-sm-10 col-sm-offset-1" style="border-radius:5px; border:2px solid #ddd;">
+    		<p class="h3"><strong>Account Summary</strong></p>
+	    	<div class="col-sm-3">
+	    		<p class="h5">Total Balance</p>
+	    		<p class="h3" style="color: #5cb85c;">$27,456,111</p>
+	    	</div>
+	    	<div class="col-sm-3">
+	    		<p class="h5">Total Earnings</p>
+	    		<p class="h3" style="color: #5cb85c;">$155,111</p>
+	    	</div>
+	    	<div class="col-sm-3">
+	    		<p class="h5">Return of Last Month</p>
+	    		<p class="h3" style="color: #5cb85c;">0.53%</p>
+	    	</div>
+	    	<div class="col-sm-3 text-right">
+	    		<p ><input type="button" class="btn btn-success" value="Transaction Record" /></p>
+	    		<p ><input type="button" class="btn btn-success" value="Monthly Statement" /></p>
+	    	</div>
+    	</div>
+    </div>
+    <br/>
+    <div class="row">
+    	<div class="col-sm-10 col-sm-offset-1" style=" border-radius:5px; border:2px solid #ddd;">
+    		<p class="h3"><strong>My Plans</strong><input type="button" class="btn btn-success pull-right" value="Add New Plan" /></p>
+    		<div id="accordion" style="margin-top: 20px;">
+                    <div>
+                        <h3>
+                        	<a href="#">General Saving
+                        		<span class="accordionSpan" style="margin-left: 80px;">Starting Date: 2015.06</span>
+                        		<span class="accordionSpan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance:
+                        			<span style="color:#5cb85c;">$1,243,120</span>
+                        		</span class="accordionSpan">
+                        		<span class="accordionSpan">Earning:
+                        			<span style="color:#5cb85c;">$243.120</span>
+                        		</span>
+                        	</a>
+                        </h3>
+                        <div></div>
+                    </div>
+                    <div>
+                        <h3 class="eductionbox"><a href="#">Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        		<span class="accordionSpan" style="margin-left: 80px;">Plan Horizon: 2015.06- 2018.07</span>
+                        		<span class="accordionSpan">Balance:
+                        			<span style="color:#5cb85c;">$3.273,190</span>
+                        		</span class="accordionSpan">
+                        		<span class="accordionSpan">Completion:
+                        			<span style="color:#5cb85c;">61%</span>
+                        		</span>
+                        	</a></h3>
+                        <div >
+                        	<div>
+	                        	<p class="h4"><strong>Plan summary</strong></p>
+	                        	<p class="h5">You have been investing in a brighter future for <span class="color-green">725</span> days.</p>
+	                        	<p class="h5">Over the Period, you investing in a toal of  <span class="color-green">$2,700,000</span>, We've managed to grow it to $3,273,190.</p>
+	                        	<br><br>
+	                        	<p class="h5">Congratulation! You goal is <span class="color-green">61%</span> completed.</p>
+	                        	<p class="h5">To reach you goal, we recommend you to deposit <span class="color-green">$2,416</span> per month for the next 27 months.</p>
+	                        	<p><input type="button" class="btn btn-success btn-large" value="Make Deposit/Adjustment" /></p>
+	                        	<p class="H4">
+	                        		<strong>Track Record</strong>
+	                        		<input type="checkBox" id="eduCheckbox" style="margin-left:30px"/>
+	                        		Show Projection
+	                        	</p>
+	                        	<img id="educationImg" src="assets/picture/login_4.jpg" style="width:95%; margin: 10px auto;"/>
+	                        	<img src="assets/picture/login_2.jpg" style="width:95%; margin: 10px auto;"/>
+	                        </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <h3><a href="#">
+                        		Retirement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        		<span class="accordionSpan" style="margin-left: 80px;">Plan Horizon: 2015.06- 2053.07</span>
+                        		<span class="accordionSpan">Balance:
+                        			<span style="color:#5cb85c;">$3.273,190</span>
+                        		</span class="accordionSpan">
+                        		<span class="accordionSpan">Earning:
+                        			<span style="color:#5cb85c;">$153.456</span>
+                        		</span>
+                        	</a></h3>
+                        <div>
+                        	<p class="h4"><strong>Plan summary</strong> <input type="button" class="btn btn-success pull-right" style="font-size: 14px;" value="Make Deposit/Adjustment"></p>
+	                        	<p class="h5">You are saving for <span class="color-green">$5,500,000</span> by July <span class="color-green">2018-07</span>. You have invested in that plan for <span class="color-green">725</span> days.</p>
+	                        	<p class="h5">Over the Period, you investing in a toal of  <span class="color-green">$2,700,000</span>, We've managed to grow it to <span class="color-green">$3,273,190</span>. Your goal is <span class="color-green">61%</span> complete.</p>
+	                        	<br><br>
+	                        	<p class="h5">To reach you goal, we recommend you to deposite <span class="color-green">$2,416</span> per month for the next 27 months.</p>
+	                        	<p><input type="button" class="btn btn-success btn-large" value="Make Deposit/Adjustment" /></p>
+	                        	<p class="H4">
+	                        		<strong>Track Record</strong>
+	                        		<input type="checkBox" id="eduCheckbox" style="margin-left:30px"/>
+	                        		Show Projection
+	                        	</p>
+	                        	<img src="assets/picture/login_3.jpg" style="width:95%; margin: 10px auto;"/>
+	                        	<img src="assets/picture/login_2.jpg" style="width:95%; margin: 10px auto;"/>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><a href="#">Major Purchase
+                        		<span class="accordionSpan" style="margin-left: 80px;">Plan Horizon: 2015.06- 2018.07</span>
+                        		<span class="accordionSpan">Balance:
+                        			<span style="color:#5cb85c;">$3.273,190</span>
+                        		</span class="accordionSpan">
+                        		<span class="accordionSpan">Completion:
+                        			<span style="color:#5cb85c;">61%</span>
+                        		</span>
+                        	</a></h3>
+                        <div>Phasellus mattis tincidunt nibh.</div>
+                    </div>
+                </div>
+    	</div>
+    </div>
+    <br>
+     <footer class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-1">
+            <p class="h5 aTitle">Offering</p>
+            <p class="h6"><a href="#">how it works</a></p>
+            <p class="h6"><a href="#">Pricing</a></p>
+            <p class="h6"><a href="#">Platform agreement</a></p>
+            <p class="h6"><a href="#">Privacy</a></p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h5 aTitle">Features</p>
+            <p class="h6"><a href="#">Goal-Oriented</a></p>
+            <p class="h6"><a href="#">Global</a></p>
+            <p class="h6"><a href="#">Diversification</a></p>
+            <p class="h6"><a href="#">Methodology</a></p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h5 aTitle">Company</p>
+            <p class="h6"><a href="#">About us</a></p>
+            <p class="h6"><a href="#">Contact us</a></p>
+          </div>
+          <div class="col-sm-1">
+            <p class="h5 aTitle">Resource</p>
+            <p class="h6"><a href="#">Insight</a></p>
+            <p class="h6"><a href="#">News</a></p>
+          </div>
+          <div class="col-sm-1">
+            <p class="h5 aTitle">FAQ</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="h5 aTitle">Join us on</p>
+            <p class="h6"><a href="#">Facebook</a></p>
+            <p class="h6"><a href="#">Twitter</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1" style="height: 1px; background:#bdbdbd;"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-1">
+            <p class="h6">©&nbsp;2017&nbsp;WealthEdge&nbsp;Asset&nbsp;Management&nbsp;Pte&nbsp;Ltd</p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h6 text-right">support@wealthedge.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+   </body>
+</html>
+<script type="text/javascript" src="./assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/jquery-ui-bootstrap/assets/js/jquery-ui-1.10.0.custom.min.js"></script>
+<script>
+	$('#accordion').accordion({
+    	header: "h3"
+	});
+	$('.eductionbox').click();
+	$('#eduCheckbox').on('click', function(){
+		var checked = $(this).prop('checked');
+		if(checked){
+			$('#educationImg').attr('src',"assets/picture/login_1.jpg");
+		}else{
+			$('#educationImg').attr('src',"assets/picture/login_4.jpg");
+		}
+	});
+</script>

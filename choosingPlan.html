@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>ChoosingPlan</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.css"/>
+    <link type="text/css" href="./assets/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="./assets/css/animate.css"/>
+  </head>
+  <body class="container-fluid">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="row header">
+        <div class="col-sm-1 col-sm-offset-1 logo">
+          <a href="./home.html"><img src="./assets/picture/Main_Logo.png" width="150px"></a>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 nav">
+          <p class="navP"><span class="cicle">1</span><a class="h6" href="./questionnaire.html">Risk Profile</a></p>
+        </div>
+        <div class="col-sm-2 nav">
+          <p class="navP"><span class="cicle cicle_active">2</span><a class="h6" href="#">Customization</a></p>
+        </div>
+        <div class="col-sm-2 nav">
+          <p class="navP"><span class="cicle">3</span><a class="h6" href="#">Open Accout</a></p>
+        </div>
+        <div class="col-sm-2 logo">
+          <p class="h6">Already own an account?</p>
+        </div>
+         <div class="col-sm-1 logo" style="padding:0">
+          <a href="./login.html" class="h6 invest">Login in</a>
+        </div>
+    </header>
+    <div class="customization row">
+      <div class="col-sm-5">
+        <div id="customizationPie" style="width: 100%; height: 280px; "></div>
+        <div id="customizationLine" style="width: 100%; height: 280px; padding: 0 -80px -40px -80px; "></div>
+        <p class="h6 color-fade-gold" style="margin-top:-30px; padding:0 75px;">Projected annual return is <span id="returnPercent">5.85%</span>.Performance projections are based on financial modelling and historical data. They are not exact prediction of future performance.</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+            <div class="col-xs-4">
+              <p class="h4">Your risk tolerance <span id="tolerance_amount"></span></p>
+              <p class="h6 session_sub_title" style="position:relative;">We recommend <span id="recommend_value"></span>
+              <span id="recommendDetail" class="cicle" style="background-color: #337ab7; font-weight:700; color:#fff;">?</span>
+              <span id="detail" class="detail">&nbsp;&nbsp;&nbsp;&nbsp;Based on your risk capacity,risk attitude, investment objective and time horizon, we recommend you are in this level.</span>
+              </p>
+            </div>
+            <div class="col-xs-8" style="margin-top:13px;">
+              <div id="tolerance_amount_slider"></div>
+              <p class="h6" style="position: relative;">
+                <span class="text-left color-blue">More Conservative</span>
+                <span class="text-right color-orange" style="position:absolute; right: 0;">More Aggressive</span>
+              </p>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 60px;">
+          <div class="col-xs-12"><p class="h4">Choose Your Plan</p></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+             <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-a">General saving</a></li>
+                    <li><a href="#tabs-b">Retirement</a></li>
+                    <li><a href="#tabs-c">Education</a></li>
+                    <li><a href="#tabs-d">Major Purchase</a></li>
+                </ul>
+                <div id="tabs-a">
+                  <p class="h4">Investment period:
+                      <input id="general-invest-year-value" type="number" class="yearsInpt" />years
+                  </p>
+                  <p class="h6 color-fade-gold">Longer investment horizon reduces the probability of loss</p>
+                  <div id="general-invest-year-sider" style="width: 60%"></div>
+                  <br><br>
+                  <p class="h4">Initial Investment: $<input id="general-invest-money-value" type="number" class="yearsInpt" /> &nbsp;&nbsp;&nbsp;&nbsp; Monthly Saving: $ <input id="general-mothly-saving-value" type="number" class="yearsInpt" /> </p>
+                </div>
+                <div id="tabs-b">
+                  <p class="h5 color-fade-gold">
+                    I am
+                    <input id="retirement-year-old" type="number" min=18 max=90 class="yearsInpt" /> years old. My monthly income is $
+                    <input id="retirement-monthly-income" min=0 type="number" class="yearsInpt" />.
+                  </p>
+                  <p class="h5 color-fade-gold">
+                    I plan to retire at <input id="retirement-year" type="number" max=99 min=28 class="yearsInpt" />years old.
+                  </p>
+                  <!-- <p class="h5 color-fade-gold">
+                    My expected monthly CPF payout is $
+                    <input id="retirement-monthly-payout" type="number" class="yearsInpt" />.
+                  </p> -->
+                  <p class="h5 color-fade-gold">
+                    After that, I need to spend $
+                    <input id="retirement-month-spend" type="number" class="yearsInpt" /> per month for <input id="retirement-month-spend-years" min=1 type="number" class="yearsInpt" />years.
+                  </p>
+                  <span class="h6 color_gray">Inflation is assumed to be 2%, you can use current price level to plan your future.</span>
+                  <br><br>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <p class="h4">To reach that goal, we recommend:</p>
+                      <span class="h6 color_gray">It is for you reference</span>
+                      <p class="h5 color-fade-gold" >
+                        Initial Investment: $<span id="retirement-init-investment">0</span>
+                        <!-- <div  id="retirement-init-investment-slider" style="position: relative; left: 200px; top:-23px; width: 150px;"></div> -->
+                      </p>
+                      <p class="h5 color-fade-gold" >
+                        Mothly saving: $<span id="retirement-monthly-saving"></span>
+                        <div  id="retirement-monthly-saving-slider" style="position: relative; left: 200px; top:-23px; width: 150px;"></div>
+                      </p>
+                    </div>
+                    <div class="col-xs-5">
+                      <p class="h4">Your choice</p>
+                        <span class="h6 color_gray">Of course you can make your own choice</span>
+                      <p class="h5 color-fade-gold" >
+                        Initial Investment:  &nbsp;&nbsp;$<input id="retirement-your-choice-investment" min=0 type="number" class="yearsInpt" />
+                      </p>
+                      <p class="h5 color-fade-gold" style="margin-top:23px;">
+                        Monthly Saving: &nbsp;&nbsp;&nbsp;&nbsp;$<input id="retirement-your-choice-monthly-saving" min=0 type="number" class="yearsInpt" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabs-c">
+                  <p class="h5 color-fade-gold">
+                    In
+                    <input id="education-year" min=1 max=80 type="number" class="yearsInpt" />years. I'am going to need $
+                    <input id="education-monthly" min=0 type="number" class="yearsInpt" /> for education.
+                  </p>
+                  <p class="h5 color-fade-gold">
+                    My current monthly income is<input id="education-monthly-income" min=0 type="number" class="yearsInpt" />.
+                  </p>
+                  <br>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <p class="h4">To reach that goal, we recommend:</p>
+                      <span class="h6 color_gray">It is for you reference</span>
+                      <p class="h5 color-fade-gold" >
+                        Initial Investment: $<span id="education-init-investment">0</span>
+                        <!-- <div  id="education-init-investment-slider" style="position: relative; left: 200px; top:-23px; width: 150px;"></div> -->
+                      </p>
+                      <p class="h5 color-fade-gold" >
+                        mothly saving: $<span id="education-monthly-saving"></span>
+                        <div  id="education-monthly-saving-slider" style="position: relative; left: 200px; top:-23px; width: 150px;"></div>
+                      </p>
+                    </div>
+                    <div class="col-xs-5">
+                      <p class="h4">Your choice</p>
+                      <span class="h6 color_gray">Of course you can make your own choice</span>
+                      <p class="h5 color-fade-gold" >
+                        Initial Investment:  &nbsp;&nbsp;$<input id="education-your-choice-investment" min=0 type="number" class="yearsInpt" />
+                      </p>
+                      <p class="h5 color-fade-gold" style="margin-top:23px;">
+                        Monthly Saving: &nbsp;&nbsp;&nbsp;&nbsp;$<input id="education-your-choice-monthly-saving" min=0 type="number" class="yearsInpt" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabs-d">
+                  <p class="h5 color-fade-gold">
+                    In
+                    <input id="major-purchase-year" min=1 max=80 type="number" class="yearsInpt" />years. I'am going to need $
+                    <input id="major-purchase-monthly" min=0 type="number" class="yearsInpt" />.
+                  </p>
+                  <p class="h5 color-fade-gold">
+                    My current monthly income is<input id="major-purchase-monthly-income" min=0 type="number" class="yearsInpt" />.
+                  </p>
+                  <br>
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <p class="h4">To reach that goal, we recommend:</p>
+                      <span class="h6 color_gray">It is for you reference</span>
+                      <p class="h5 color-fade-gold" >
+                        Initial Investment: $<span id="major-purchase-init-investment">0</span>
+                       <!--  <div  id="major-purchase-init-investment-slider" style="position: relative; left: 200px; top:-23px; width: 150px;"></div> -->
+                      </p>
+                      <p class="h5 color-fade-gold" >
+                        Mothly saving: $<span id="major-purchase-monthly-saving"></span>
+                        <div  id="major-purchase-monthly-saving-slider" style="position: relative; left: 200px; top:-23px; width: 150px;"></div>
+                      </p>
+                    </div>
+                    <div class="col-xs-5">
+                      <p class="h4">Your choice</p>
+                      <span class="h6 color_gray">Of course you can make your own choice</span>
+                      <p class="h5 color-fade-gold" >
+                        Initial Investment:  &nbsp;&nbsp;$<input id="major-purchase-your-choice-investment" min=0 type="number" class="yearsInpt" />
+                      </p>
+                      <p class="h5 color-fade-gold" style="margin-top:23px;">
+                        Monthly Saving: &nbsp;&nbsp;&nbsp;&nbsp;$<input id="major-purchase-your-choice-monthly-saving" type="number" class="yearsInpt" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 模态框 -->
+    <button type="button" id="showModalBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="display:none;">
+    </button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel">
+        <div class="modal-dialog" style="width: 900px;"role="document">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Risk Profiling Result</h4>
+                </div>
+                <div class="modal-body" >
+                  <div class="row">
+                    <div class="col-sm-5" id="barBox" style=" width: 470px; height: 300px;"></div>
+                    <div class="col-sm-5 color-fade-gold" style=" padding:0; padding-top:80px;">
+                      <p class="h5" style="padding: 5px;">Accounting for your risk appitite, risk capacity and investment period, your risk tolerance leve is <span id="riskRecoment" style="color:green;"></span></p>
+                      <ul class="h5">
+                        <li id="recomentText1"></li>
+                        <li id="recomentText2"></li>
+                        <li id="recomentText3"></li>
+                        <!-- <li style="padding: 5px;">Moreover, You are on the way of building your wealth and your financial condition could be impacted by short-term fluctuations.</li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框 -->
+    <footer class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-1">
+            <p class="h5 aTitle">Offering</p>
+            <p class="h6"><a href="#">how it works</a></p>
+            <p class="h6"><a href="#">Pricing</a></p>
+            <p class="h6"><a href="#">Platform agreement</a></p>
+            <p class="h6"><a href="#">Privacy</a></p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h5 aTitle">Features</p>
+            <p class="h6"><a href="#">Goal-Oriented</a></p>
+            <p class="h6"><a href="#">Global</a></p>
+            <p class="h6"><a href="#">Diversification</a></p>
+            <p class="h6"><a href="#">Methodology</a></p>
+          </div>
+          <div class="col-sm-2">
+            <p class="h5 aTitle">Company</p>
+            <p class="h6"><a href="#">About us</a></p>
+            <p class="h6"><a href="#">Contact us</a></p>
+          </div>
+          <div class="col-sm-1">
+            <p class="h5 aTitle">Resource</p>
+            <p class="h6"><a href="#">Insight</a></p>
+            <p class="h6"><a href="#">News</a></p>
+          </div>
+          <div class="col-sm-1">
+            <p class="h5 aTitle">FAQ</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="h5 aTitle">Join us on</p>
+            <p class="h6"><a href="#">Facebook</a></p>
+            <p class="h6"><a href="#">Twitter</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1" style="height: 1px; background:#bdbdbd;"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-1">
+            <p class="h6">©&nbsp;2017&nbsp;WealthEdge&nbsp;Pte&nbsp;Ltd</p>
+
+          </div>
+          <div class="col-sm-2">
+            <p class="h6 text-right">support@wealthedge.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+  </body>
+</html>
+<script type="text/javascript" src="./assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/jquery-ui-bootstrap/assets/js/jquery-ui-1.10.0.custom.min.js"></script>
+<script type="text/javascript" src="./assets/js/echarts.js"></script>
+<script type="text/javascript" src="./assets/js/customization.js"></script>

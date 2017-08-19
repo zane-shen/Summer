@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>json</title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+</head>
+<body>
+    json
+    <input type="button" onclick="sendJson()" value="点击">
+</body>
+
+<script>
+    function sendJson() {
+
+        var stu=new Array('A','B','A','B','A','B','A','B');
+        $.ajax({
+            method : 'POST',  //提交方式
+	           dataType : 'JSON',
+            //  url : "http://localhost/retirement/test.php",//路径,www根目录下
+            // url : "http://localhost/generalSaving/chartData.php",//路径,www根目录下
+            // url : "http://localhost/riskTolerance/getData.php",//路径,www根目录下
+            // url : "http://localhost/retirement/chartData.php",//路径,www根目录下
+            //url : "http://localhost/major/chartData.php",//路径,www根目录下
+            url : "http://localhost/test/example.php",//路径,www根目录下
+            // url : "http://localhost/getRiskRecommend.php",//路径,www根目录下
+            data : {
+              "userSliderFlag":1,
+              "risk":3,
+              "majorYearsOld":6,
+              "majorMoney":500,
+              "majorMonthIncome":700,
+              "majorRecommendSaving":904,
+              "majorYourInvestment":0,
+              "majorYourMonthSaving":701
+              // "answers":stu//               "risk":	3,
+// "retirementYearsOld":28,
+// "retirementIncome":3000,
+// "retirementRetireYearOld":60,
+// "retirementSpend":30,
+// "retireSpendYears":20,
+// "retireRecommendInvestment":0,
+// "retireRecommendSaving":383,
+// "retireYourInvestment":0,
+// "retireYourMonthSaving":330
+
+            },//数据，这里使用的是Json格式进行传输
+            success : function(result) {//返回数据根据结果进行相应的处理
+                alert(result+'success');
+            },
+            fail : function(result) {//返回数据根据结果进行相应的处理
+                            alert("fail");
+                        },
+            error : function(result) {//返回数据根据结果进行相应的处理
+                                        alert(result+'fail');
+
+                                    }
+    });
+    }
+</script>
+</html>
