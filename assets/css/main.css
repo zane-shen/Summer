@@ -455,3 +455,8 @@ a.faqP:hover {
 	height: 5px;
 	background-color: #337ab7;
 }
+@media screen and (max-width: 768px) {
+	header>div{
+		line-height: 40px;
+	}
+}
