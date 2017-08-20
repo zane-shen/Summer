@@ -63,10 +63,10 @@ input {
 	background-image: url("../picture/homepage_11.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	-moz-background-size:1215px 100%;
-    -webkit-background-size:1215px 100%;
-    -o-background-size:1215px 100%;
-    background-size:1215px 100%;
+	-moz-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    -o-background-size:100% 100%;
+    background-size:100% 100%;
 }
 .session_2{
 	padding-top: 50px;
@@ -78,6 +78,7 @@ input {
 .session_sub_title{
 	margin: 35px auto;
 	color: #8a6d3b;
+	margin-left: 120px;
 }
 .session_2 .box{
 	background-color: #ffffcc;
@@ -457,7 +458,11 @@ a.faqP:hover {
 	height: 5px;
 	background-color: #337ab7;
 }
-.session_4 h1.text-left{
+.session_4 h1.text-left,
+.session_7 h1.text-left,
+.session_9 h1.text-left,
+.session_8 .session_sub_title,
+.session_9 .session_sub_title{
 	margin-left: 120px;
 }
 
@@ -493,13 +498,54 @@ a.faqP:hover {
 		display: block;
 		cursor: pointer;
 	}
+	.session_1{
+		background-size: cover;
+	}
 	.session_4 .bigImg{
-		top: 0;
+		top: 433px;
+		left: 10%;
 	}
 	.session_4 h1.text-left,
-	.session_4 .p_list{
-		margin-left: 0;
+	.session_7 h1.text-left,
+	.session_9 h1.text-left,
+	.session_8 .session_sub_title,
+	.session_9 .session_sub_title,
+	.session_4 .p_list,
+	.session_4 .session_sub_title,
+	.session_5 .session_sub_title,
+	.session_6 .session_sub_title{
+		margin-left: 5%;
 	}
+
+	.session_7 img{
+		left: 5%;
+		top: 320px;
+	}
+	.session_7{
+		padding-top: 50px;
+	}
+	.session_6 img{
+		left: 5%;
+		top: 100px;
+	}
+	.session_6{
+		height: 375px;
+	}
+	.session_5 h1{
+		text-align: left;
+	}
+	.session_5{
+		padding-top: 250px;
+	}
+	.session_5 .text-right{
+		text-align: left;
+		margin-left: 5%;
+	}
+	.session_8{
+		padding-top: 5px;
+	}
+
+
 }
 
 .mbr-navbar__hamburger {
