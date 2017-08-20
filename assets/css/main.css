@@ -557,6 +557,17 @@ a.faqP:hover {
 	.questionairBox p{
 		margin: 40px 5%;
 	}
+	.methodology_session_2 .method2Img1,
+	.methodology_session_2 .method2Img2{
+		width: 39%;
+		bottom: 80px;
+	}
+	.methodology_session_1{
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		padding-top: 150px;
+		height: 400px;
+	}
 
 
 }
