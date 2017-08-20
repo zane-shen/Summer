@@ -61,14 +61,15 @@ input {
 	padding-top: 150px;
 	height: 650px;
 	background-image: url("../picture/homepage_11.png");
-	-moz-background-size:cover;
-    -webkit-background-size:cover;
-    -o-background-size:cover;
-    background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-moz-background-size:1215px 100%;
+    -webkit-background-size:1215px 100%;
+    -o-background-size:1215px 100%;
+    background-size:1215px 100%;
 }
 .session_2{
 	padding-top: 50px;
-	height: 550px;
 	background-color: #fff;
 }
 .session_2 span{
@@ -456,6 +457,9 @@ a.faqP:hover {
 	height: 5px;
 	background-color: #337ab7;
 }
+.session_4 h1.text-left{
+	margin-left: 120px;
+}
 
 
 
@@ -488,6 +492,13 @@ a.faqP:hover {
 	.mbr-hamburger.mbr-navbar__hamburger {
 		display: block;
 		cursor: pointer;
+	}
+	.session_4 .bigImg{
+		top: 0;
+	}
+	.session_4 h1.text-left,
+	.session_4 .p_list{
+		margin-left: 0;
 	}
 }
 
