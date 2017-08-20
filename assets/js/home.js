@@ -117,7 +117,11 @@
         	}
    		 	]
    		});
-	}
+	};
+
+	$('.mbr-navbar__hamburger').on('click', function () {
+		$('header').toggleClass('show-xs');
+	});
 
 	/** end home **/
 })(window, $, document, echarts);
