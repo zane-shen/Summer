@@ -501,8 +501,14 @@ a.faqP:hover {
 	.session_1{
 		background-size: cover;
 	}
+	.session_3 .text-center{
+		margin-left: 0;
+	}
+	.session_4{
+		padding: 10px 0;
+	}
 	.session_4 .bigImg{
-		top: 433px;
+		top: 445px;
 		left: 10%;
 	}
 	.session_4 h1.text-left,
@@ -519,10 +525,10 @@ a.faqP:hover {
 
 	.session_7 img{
 		left: 5%;
-		top: 320px;
+		top: 360px;
 	}
 	.session_7{
-		padding-top: 50px;
+		padding-top: 100px;
 	}
 	.session_6 img{
 		left: 5%;
@@ -543,6 +549,9 @@ a.faqP:hover {
 	}
 	.session_8{
 		padding-top: 5px;
+	}
+	.session_9 p.text-left{
+		margin-top: 120px;
 	}
 
 
