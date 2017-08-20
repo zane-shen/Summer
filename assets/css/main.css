@@ -225,7 +225,6 @@ footer a:hover{
 }
 
 .questionairBox{
-	width: 1300px;
 	text-align: left;
 	margin: 0 auto;
 	padding: 30px;
@@ -552,6 +551,11 @@ a.faqP:hover {
 	}
 	.session_9 p.text-left{
 		margin-top: 120px;
+	}
+
+
+	.questionairBox p{
+		margin: 40px 5%;
 	}
 
 
