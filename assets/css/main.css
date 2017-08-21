@@ -63,14 +63,13 @@ input {
 	background-image: url("../picture/homepage_11.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	-moz-background-size:100% 100%;
-    -webkit-background-size:100% 100%;
-    -o-background-size:100% 100%;
-    background-size:100% 100%;
+	-moz-background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
 .session_2{
-	padding-top: 50px;
-	background-color: #fff;
+	padding-top: 3%;
 }
 .session_2 span{
 	color: #337ab7;
@@ -78,12 +77,11 @@ input {
 .session_sub_title{
 	margin: 35px auto;
 	color: #8a6d3b;
-	margin-left: 120px;
 }
 .session_2 .box{
 	background-color: #ffffcc;
-	padding: 8px 20px;
-	height: 230px;
+	padding: 8px 0px 8px 0px;
+	/*height: 230px;*/
 	color: #8a6d3b;
 	text-align: center;
 	position:relative;
@@ -92,11 +90,12 @@ input {
 	width: 45px;
 	margin: 15px auto;
 }
-.session_2 a{
+.session_2_a{
 	text-decoration: underline;
-	position: absolute;
-	bottom: 20px;
+	position: relative;
+	padding-bottom: 8%;
 }
+
 .session_3 span{
 	color: #bc1717;
 }
@@ -104,23 +103,19 @@ input {
 	margin-top: 80px;
 }
 .session_3 h5{
-	margin-bottom: 220px;
+	margin-bottom: 80px;
 }
 
 .session_4{
 	position: relative;
-	width:100%;
-	background-color: #efefef;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-left: 5%;
 }
-.session_4 .bigImg{
-	width: 40%;
-	position: absolute;
-	top: -100px;
-	right: 60px;
-}
+
 .session_4 .p_list{
-	margin: 20px 0;
-	margin-left: 120px;
+	margin: 10px 0;
+	margin-left: %5%;
 }
 .session_4 .p_list span{
 	width: 36px;
@@ -131,37 +126,51 @@ input {
 	height: 36px;
 }
 
-.session_5{
-	padding: 300px 80px 0 10px;
+.session_4_add{
+	position: relative;
+	padding-right: 5%;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
-.session_5 h1{
-	margin-right: 100px;
+.session_4_add img{
+	width: 85%;
+}
+
+.session_5{
+	position: relative;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding-left: 5%;
+}
+
+.session_5 img{
+	width: 100%;	
 }
 .session_6{
 	position: relative;
-	background-color: #ffffec;
-	height: 450px;
+	padding-left: 5%;
+	margin-top: 8%;
+	margin-bottom: 8%;
 }
-.session_6 img{
-	position: absolute;
-	top: 30px;
-	left: 100px;
-	width: 70%;
+.session_6 h1{
+	padding-right: 100px;
 }
+
 .session_7{
-	padding: 500px 80px 0 10px;
 	position: relative;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding-left: 5%;
 }
-.session_7 img{
-	position: absolute;
-	top: 400px;
-	right: 0;
-	width: 60%;
+
+.session_8{
+	position: relative;
+	padding-right: 5%;
+	margin-top: 8%;
+	margin-bottom: 8%;
 }
-.session_8 {
-     padding-bottom: 80px;
-	background-color: #ffffec;
-	z-index: -1;
+.session_8 img{
+	width: 100%;
 }
 .session_9 p{
    margin-top: 200px;
@@ -457,10 +466,10 @@ a.faqP:hover {
 	height: 5px;
 	background-color: #337ab7;
 }
-.session_4 h1.text-left,
-.session_7 h1.text-left,
+/* .session_4 h1.text-left,
+.session_7 h1.text-left, */
 .session_9 h1.text-left,
-.session_8 .session_sub_title,
+/* .session_8 .session_sub_title, */
 .session_9 .session_sub_title{
 	margin-left: 120px;
 }
