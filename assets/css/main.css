@@ -62,10 +62,10 @@ input {
 	background-image: url("../picture/homepage_11.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	-moz-background-size:1415px 100%;
-    -webkit-background-size:1415px 100%;
-    -o-background-size:1415px 100%;
-    background-size:1415px 100%;
+	-moz-background-size:cover;
+    	-webkit-background-size:cover;
+    	-o-background-size:cover;
+    	background-size:cover;
 }
 .session_2{
 	padding-top: 3%;
