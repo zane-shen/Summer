@@ -565,7 +565,7 @@ a.faqP:hover {
 
 
 	.questionairBox p{
-		margin: 40px 5%;
+		margin: 20px 0;
 	}
 	.methodology_session_2 .method2Img1,
 	.methodology_session_2 .method2Img2{
@@ -585,6 +585,20 @@ a.faqP:hover {
 	}
 	.col-sm-5.line2{
 		margin-top: 100px;
+	}
+	.methodology_sub_font{
+		width: 100%;;
+	}
+	.blogBox{
+		width:100%;
+	}
+	.blogImg{
+		width: 100%;
+		left:0;
+		height: auto;
+	}
+	.customization{
+		height:auto;
 	}
 
 
