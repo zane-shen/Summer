@@ -72,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="choosingPlan.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="choosingPlan.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/choosingPlan.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-20">
@@ -137,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="599" column="4" selection-start-line="599" selection-start-column="4" selection-end-line="599" selection-end-column="4" />
+            <state relative-caret-position="112">
+              <caret line="327" column="1" selection-start-line="327" selection-start-column="1" selection-end-line="327" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -175,8 +175,8 @@
         <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/questionnaire.html" />
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/choosingPlan.html" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -351,12 +351,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502178502713</updated>
       <workItem from="1502178503800" duration="117000" />
-      <workItem from="1502976933978" duration="20256000" />
+      <workItem from="1502976933978" duration="20370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20373000" />
+    <option name="totallyTimeSpent" value="20487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -489,14 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="599" column="4" selection-start-line="599" selection-start-column="4" selection-end-line="599" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questionnaire.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -517,6 +509,14 @@
             <element signature="n#style#0;n#span#1;n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="327" column="1" selection-start-line="327" selection-start-column="1" selection-end-line="327" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
