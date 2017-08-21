@@ -236,7 +236,8 @@
         }else {
             $icon.removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
         }
-        $(that).parent().find('.ui-accordion-content').toggle(100);
+
+        $(that).toggleClass('ui-state-active').parent().find('.ui-accordion-content').toggle(100);
 
     });
 </script>
