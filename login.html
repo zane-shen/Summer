@@ -228,4 +228,15 @@
     $('.mbr-navbar__hamburger').on('click', function () {
         $('header').toggleClass('show-xs');
     });
+    $('.ui-accordion-header').off('click').on('click', function () {
+        var that = this;
+        var $icon = $(this).find('.ui-icon');
+        if($icon.hasClass('ui-icon-triangle-1-s')){
+            $icon.removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e');
+        }else {
+            $icon.removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s');
+        }
+        $(that).parent().find('.ui-accordion-content').toggle(100);
+
+    });
 </script>
