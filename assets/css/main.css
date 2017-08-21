@@ -570,6 +570,14 @@ a.faqP:hover {
 	}
 
 
+	.blogBox{
+		height: auto;
+	}
+	.col-sm-5.line2{
+		margin-top: 100px;
+	}
+
+
 }
 
 .mbr-navbar__hamburger {
