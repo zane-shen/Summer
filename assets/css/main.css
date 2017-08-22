@@ -240,7 +240,7 @@ footer a:hover{
 }
 
 .questionairBox p{
-	margin: 40px 150px;
+	margin: 40px 20%;
 }
 
 .questionairBox p:hover{
@@ -545,12 +545,15 @@ a.faqP:hover {
 	}
 	.session_6{
 		height: 375px;
+		transform: translateY(-200px);
+		-webkit-transform: translateY(-200px);
 	}
 	.session_5 h1{
 		text-align: left;
 	}
 	.session_5{
-		padding-top: 250px;
+		transform: translateY(350px);
+		-webkit-transform: translateY(350px);
 	}
 	.session_5 .text-right{
 		text-align: left;
@@ -599,6 +602,24 @@ a.faqP:hover {
 	}
 	.customization{
 		height:auto;
+	}
+
+
+	.methodology_session_4{
+		height: 524px;
+	}
+	.methodology_session_4 .text-left.methodology_sub_font{
+
+		transform: translateY(-200px);
+		-webkit-transform: translateY(-200px);
+	}
+	.methodology_session_4 .col-sm-5.text-center.col-sm-offset-1{
+		transform: translateY(157px);
+		-webkit-transform: translateY(157px);
+	}
+	.methodology_session_4 h2.text-left{
+		transform: translateY(-200px);
+		-webkit-transform: translateY(-200px);
 	}
 
 
