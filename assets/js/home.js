@@ -1,4 +1,4 @@
-;
+;;
 (function(window, $, document, echarts){
 
 	/** home  **/
