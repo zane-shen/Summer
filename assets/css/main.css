@@ -64,9 +64,9 @@ input {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	-moz-background-size:cover;
-    -webkit-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
+   -webkit-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
 }
 .session_2{
 	padding-top: 3%;
